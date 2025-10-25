@@ -8,11 +8,11 @@ export default function HeroSection() {
   return (
     <div className="relative flex flex-col justify-center items-center h-screen p-6 bg-gray-900 overflow-hidden space-y-5">
       {/* Animated icons in background */}
-      <FaReact className="animated-icon speed-1 text-blue-400" style={{ top: '10%', left: '20%' }} />
-      <RiNextjsFill className="animated-icon speed-2 text-green-500" style={{ top: '50%', left: '10%' }} />
-      <FaDocker className="animated-icon speed-3 text-yellow-400" style={{ top: '30%', left: '90%' }} />
-      <SiMariadb className="animated-icon speed-1 text-blue-300" style={{ top: '80%', left: '30%' }} />
-      <FaLinux className="animated-icon speed-3 text-yellow-400" style={{ top: '90%', left: '80%' }} />
+      <FaReact className="animated-icon speed-1 text-blue-500" style={{ top: '10%', left: '20%' }} />
+      <RiNextjsFill className="animated-icon speed-2 text-orange-500" style={{ top: '50%', left: '10%' }} />
+      <FaDocker className="animated-icon speed-3 text-pink-500" style={{ top: '30%', left: '90%' }} />
+      <SiMariadb className="animated-icon speed-1 text-red-500" style={{ top: '80%', left: '30%' }} />
+      <FaLinux className="animated-icon speed-3 text-green-500" style={{ top: '90%', left: '80%' }} />
 
       {/* Hero content */}
       <Image
