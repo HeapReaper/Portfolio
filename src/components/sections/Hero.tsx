@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaReact, FaDocker, FaLinux, FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa";
 import { SiMariadb } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import { personalData } from "@/data/personal";
 
 export default function HeroSection() {
   return (
@@ -15,7 +16,7 @@ export default function HeroSection() {
 
       {/* Hero content */}
       <Image
-        src="/me-160x160.webp"
+        src={personalData.profilePicture}
         className="rounded-full border border-purple-700 shadow-[0_0_40px_rgba(168,85,247,0.6)] transition-transform hover:scale-110 duration-300"
         width={160}
         height={160}
@@ -23,15 +24,15 @@ export default function HeroSection() {
       />
 
       <h1 className="text-3xl font-bold text-white">
-        Kelvin de Reus
+        {personalData.name}
       </h1>
 
       <h3 className="text-xl text-gray-300">
-        🧑‍💻 Full Stack Web Developer 🧑‍💻
+        {personalData.title}
       </h3>
 
       <h5 className="text-sm text-gray-300 text-center max-w-xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        {personalData.description}
       </h5>
 
       {/* Social icons */}
