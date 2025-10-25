@@ -5,7 +5,7 @@ import { RiNextjsFill } from "react-icons/ri";
 
 export default function HeroSection() {
   return (
-    <div className="relative flex flex-col justify-center items-center h-screen p-6  overflow-hidden space-y-5">
+    <section className="relative flex flex-col justify-center items-center h-screen p-6  overflow-hidden space-y-5">
       {/* Animated icons in background */}
       <FaReact className="animated-icon speed-1 text-blue-500" style={{ top: '10%', left: '20%' }} />
       <RiNextjsFill className="animated-icon speed-2 text-orange-500" style={{ top: '50%', left: '10%' }} />
@@ -57,6 +57,6 @@ export default function HeroSection() {
           />
         </a>
       </div>
-    </div>
+    </section>
   );
 }

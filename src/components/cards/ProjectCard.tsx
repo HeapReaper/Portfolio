@@ -26,7 +26,7 @@ export default function ProjectCard({
 
           <div className="flex flex-wrap gap-8 mb-6">
             <div>
-              <h3 className="text-sky-400 font-semibold mb-2">Frontend Architecture</h3>
+              <h3 className="text-purple-500 font-semibold mb-2">Frontend Architecture</h3>
               <ul className="space-y-1 text-gray-200 list-disc list-inside">
                 {frontend.map((item, index) => (
                   <li key={index}>{item}</li>
@@ -35,7 +35,7 @@ export default function ProjectCard({
             </div>
 
             <div>
-              <h3 className="text-purple-400 font-semibold mb-2">Backend Systems</h3>
+              <h3 className="text-purple-500 font-semibold mb-2">Backend Systems</h3>
               <ul className="space-y-1 text-gray-200 list-disc list-inside">
                 {backend.map((item, index) => (
                   <li key={index}>{item}</li>
@@ -45,7 +45,7 @@ export default function ProjectCard({
           </div>
 
           <div>
-            <h3 className="text-cyan-400 font-semibold mb-2">Key Achievements</h3>
+            <h3 className="text-purple-500 font-semibold mb-2">Key Achievements</h3>
             <ul className="space-y-1 text-gray-200 list-disc list-inside">
               {achievements.map((item, index) => (
                 <li key={index}>{item}</li>

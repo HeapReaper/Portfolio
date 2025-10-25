@@ -1,8 +1,8 @@
 export const projectsData = [
   {
-    title: "IoT Fleet Management Dashboard",
+    title: "KlikCV",
     description:
-      "Real-time vehicle tracking and predictive maintenance system for logistics companies.",
+      "A free CV creator",
     frontend: [
       "React + Recharts",
       "WebSockets",
