@@ -18,7 +18,7 @@ export default function ProjectCard({
   imageUrl,
 }: ProjectCardProps) {
   return (
-    <div className="backdrop-blur-md rounded-2xl shadow-lg p-6 flex flex-col md:flex-row md:gap-8 gap-4 text-white ms-4 me-4 border border-white/10">
+    <div className="backdrop-blur-sm rounded-2xl shadow-lg p-6 flex flex-col md:flex-row md:gap-8 gap-4 text-white ms-4 me-4 border border-white/10">
       <div className="flex-1 flex flex-col justify-between">
         <div>
           <h2 className="text-2xl font-bold mb-2">{title}</h2>
