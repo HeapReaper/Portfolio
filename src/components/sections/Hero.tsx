@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { FaReact, FaDocker, FaLinux } from "react-icons/fa";
-import { BiLogoTypescript } from "react-icons/bi";
+import { FaReact, FaDocker, FaLinux, FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa";
 import { SiMariadb } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 
@@ -34,6 +33,30 @@ export default function HeroSection() {
       <h5 className="text-sm text-gray-300 text-center max-w-xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </h5>
+
+      {/* Social icons */}
+      <div className="flex justify-between space-x-4">
+        <a href="https://github.com/heapreaper" target="_blank" rel="noopener noreferrer">
+          <FaGithub
+            size={26}
+            className="transition-transform hover:scale-110 duration-200"
+          />
+        </a>
+
+        <a href="" target={"_blank"} rel="noopener noreferrer">
+          <FaLinkedin
+            size={26}
+            className="transition-transform hover:scale-110 duration-200"
+          />
+        </a>
+
+        <a href="" target={"_blank"} rel="noopener noreferrer">
+          <FaDiscord
+            size={26}
+            className="transition-transform hover:scale-110 duration-200"
+          />
+        </a>
+      </div>
     </div>
   );
 }
