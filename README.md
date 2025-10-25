@@ -17,7 +17,7 @@ and fill in the details.
 
 
 ## Personalizing
-You can edit the data files in `/src/app/data` to edit things like:
+You can edit the data files in `/src/app/data` to edit values like:
 - Name
 - Profile picture
 - Projects
