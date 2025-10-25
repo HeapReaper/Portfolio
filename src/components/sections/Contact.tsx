@@ -23,7 +23,7 @@ export default function ContactSection() {
       const data = await resp.json();
 
       if (!resp.ok) {
-        setStatusMessage(data.error || "Oops! Something went wrong.");
+        setStatusMessage(data.error || "😔 Oops! Something went wrong.");
         setLoading(false);
         return;
       }
