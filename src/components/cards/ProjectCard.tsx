@@ -1,17 +1,10 @@
 import Image from "next/image";
-
-interface ProjectCardProps {
-  title: string;
-  description: string;
-  frontend: string[];
-  backend: string[];
-  achievements: string[];
-  imageUrl: string;
-}
+import {ProjectCardProps} from "@/types/project";
 
 export default function ProjectCard({
   title,
   description,
+  url,
   frontend,
   backend,
   achievements,
@@ -21,7 +14,14 @@ export default function ProjectCard({
     <div className="backdrop-blur-sm rounded-2xl shadow-lg p-6 flex flex-col md:flex-row md:gap-8 gap-4 items-center text-white border border-white/10">
       <div className="flex-1 flex flex-col justify-between">
         <div>
-          <h2 className="text-2xl font-bold mb-2">{title}</h2>
+          {url ? (
+            <a href={url} target="_blank" className="text-2xl font-bold mb-2 underline decoration-purple-500 hover:text-purple-500">
+              {title}
+            </a>
+          ) : (
+            <h2 className="text-2xl font-bold mb-2">{title}</h2>
+          )}
+
           <p className="mb-6 text-gray-300">{description}</p>
 
           <div className="flex flex-wrap gap-8 mb-6">

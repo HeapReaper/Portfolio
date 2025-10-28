@@ -2,6 +2,7 @@ export const projectsData = [
   {
     title: "Project Alpha",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    url: "https://klikcv.nl",
     frontend: [
       "Lorem ipsum dolor sit amet",
       "Consectetur adipiscing elit",
@@ -22,6 +23,7 @@ export const projectsData = [
   {
     title: "Project Beta",
     description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    url: "",
     frontend: [
       "Nisi ut aliquip ex ea commodo consequat",
       "Duis aute irure dolor in reprehenderit",
@@ -42,6 +44,7 @@ export const projectsData = [
   {
     title: "Project Gamma",
     description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+    url: "",
     frontend: [
       "Accusantium doloremque laudantium",
       "Totam rem aperiam",

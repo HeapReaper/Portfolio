@@ -3,6 +3,7 @@ import { FaReact, FaDocker, FaLinux, FaGithub, FaLinkedin, FaDiscord } from "rea
 import { SiMariadb } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { personalData } from "@/data/personal";
+import { socialsData } from "@/data/socials";
 
 export default function HeroSection() {
   return (
@@ -37,26 +38,32 @@ export default function HeroSection() {
 
       {/* Social icons */}
       <div className="flex justify-between space-x-4">
-        <a href="https://github.com/heapreaper" target="_blank" rel="noopener noreferrer">
-          <FaGithub
-            size={26}
-            className="transition-transform hover:scale-110 duration-200"
-          />
-        </a>
+        {socialsData.github !== "" && (
+          <a href="https://github.com/heapreaper" target="_blank" rel="noopener noreferrer">
+            <FaGithub
+              size={26}
+              className="transition-transform hover:scale-110 duration-200"
+            />
+          </a>
+        )}
 
-        <a href="" target={"_blank"} rel="noopener noreferrer">
-          <FaLinkedin
-            size={26}
-            className="transition-transform hover:scale-110 duration-200"
-          />
-        </a>
+        {socialsData.linkedin !== "" && (
+          <a href="" target={"_blank"} rel="noopener noreferrer">
+            <FaLinkedin
+              size={26}
+              className="transition-transform hover:scale-110 duration-200"
+            />
+          </a>
+        )}
 
-        <a href="" target={"_blank"} rel="noopener noreferrer">
-          <FaDiscord
-            size={26}
-            className="transition-transform hover:scale-110 duration-200"
-          />
-        </a>
+        {socialsData.discord !== "" && (
+          <a href="" target={"_blank"} rel="noopener noreferrer">
+            <FaDiscord
+              size={26}
+              className="transition-transform hover:scale-110 duration-200"
+            />
+          </a>
+        )}
       </div>
     </section>
   );
