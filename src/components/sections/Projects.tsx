@@ -8,7 +8,7 @@ export default function ProjectsSection() {
         Full Stack Projects
       </h1>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 items-center">
         {projectsData.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
