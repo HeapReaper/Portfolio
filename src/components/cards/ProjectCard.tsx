@@ -24,10 +24,10 @@ export default function ProjectCard({
 
           <p className="mb-6 text-gray-300">{description}</p>
 
-          <div className="flex flex-wrap gap-8 mb-6">
+          <div className="flex flex-wrap justify-center items-start gap-12 mb-6 text-center">
             <div>
               <h3 className="text-purple-500 font-semibold mb-2">Frontend Architecture</h3>
-              <ul className="space-y-1 text-gray-200 list-disc list-inside">
+              <ul className="space-y-1 text-gray-200 list-disc list-inside text-left">
                 {frontend.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
@@ -36,21 +36,21 @@ export default function ProjectCard({
 
             <div>
               <h3 className="text-purple-500 font-semibold mb-2">Backend Systems</h3>
-              <ul className="space-y-1 text-gray-200 list-disc list-inside">
+              <ul className="space-y-1 text-gray-200 list-disc list-inside text-left">
                 {backend.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
             </div>
-          </div>
 
-          <div>
-            <h3 className="text-purple-500 font-semibold mb-2">Key Achievements</h3>
-            <ul className="space-y-1 text-gray-200 list-disc list-inside">
-              {achievements.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
+            <div>
+              <h3 className="text-purple-500 font-semibold mb-2">Key Achievements</h3>
+              <ul className="space-y-1 text-gray-200 list-disc list-inside text-left">
+                {achievements.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
