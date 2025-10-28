@@ -31,7 +31,7 @@ export default function HeroSection() {
         {personalData.title}
       </h3>
 
-      <h5 className="text-sm text-gray-300 text-center max-w-xl">
+      <h5 className="text-sm text-gray-300 text-center">
         {personalData.description}
       </h5>
 
