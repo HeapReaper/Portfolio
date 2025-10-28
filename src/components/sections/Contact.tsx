@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import {contactSchema} from "@/zod/contact";
 
 export default function ContactSection() {
   const [name, setName] = useState("");
@@ -8,11 +9,28 @@ export default function ContactSection() {
   const [message, setMessage] = useState("");
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string>>({});
 
   const handleFormSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setStatusMessage(null);
+    setErrors({});
+
+    const validation = contactSchema.safeParse({ name, email, message });
+    if (!validation.success) {
+      const fieldErrors = validation.error.flatten().fieldErrors;
+      const formatted: Record<string, string> = {};
+
+      // Pick first error for each field
+      Object.entries(fieldErrors).forEach(([key, value]) => {
+        if (value && value.length > 0) formatted[key] = value[0];
+      });
+
+      setErrors(formatted);
+      setLoading(false);
+      return;
+    }
 
     try {
       const resp = await fetch("/api/contact", {
@@ -49,6 +67,7 @@ export default function ContactSection() {
         </h1>
 
         <form onSubmit={handleFormSubmit} className="flex flex-col gap-6">
+          {/* Name */}
           <div className="flex flex-col">
             <label htmlFor="name" className="text-gray-300 mb-2 font-semibold">
               Name
@@ -59,11 +78,16 @@ export default function ContactSection() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Your Name"
-              className="p-4 rounded-lg border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
-              required
+              className={`p-4 rounded-lg border ${
+                errors.name ? "border-red-500" : "border-white/10"
+              } text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 transition`}
             />
+            {errors.name && (
+              <p className="text-red-400 text-sm mt-1">{errors.name}</p>
+            )}
           </div>
 
+          {/* Email */}
           <div className="flex flex-col">
             <label htmlFor="email" className="text-gray-300 mb-2 font-semibold">
               Email
@@ -74,11 +98,16 @@ export default function ContactSection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@example.com"
-              className="p-4 rounded-lg border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
-              required
+              className={`p-4 rounded-lg border ${
+                errors.email ? "border-red-500" : "border-white/10"
+              } text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 transition`}
             />
+            {errors.email && (
+              <p className="text-red-400 text-sm mt-1">{errors.email}</p>
+            )}
           </div>
 
+          {/* Message */}
           <div className="flex flex-col">
             <label
               htmlFor="message"
@@ -92,9 +121,13 @@ export default function ContactSection() {
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Write your message..."
               rows={6}
-              className="p-4 rounded-lg border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 transition resize-none"
-              required
+              className={`p-4 rounded-lg border ${
+                errors.message ? "border-red-500" : "border-white/10"
+              } text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 transition resize-none`}
             />
+            {errors.message && (
+              <p className="text-red-400 text-sm mt-1">{errors.message}</p>
+            )}
           </div>
 
           <button
