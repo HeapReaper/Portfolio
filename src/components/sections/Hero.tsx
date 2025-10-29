@@ -42,7 +42,7 @@ export default function HeroSection() {
           <a href="https://github.com/heapreaper" target="_blank" rel="noopener noreferrer">
             <FaGithub
               size={26}
-              className="transition-transform hover:scale-110 duration-200"
+              className="transition-transform hover:scale-110 duration-200 hover:text-purple-500"
             />
           </a>
         )}
@@ -51,7 +51,7 @@ export default function HeroSection() {
           <a href="" target={"_blank"} rel="noopener noreferrer">
             <FaLinkedin
               size={26}
-              className="transition-transform hover:scale-110 duration-200"
+              className="transition-transform hover:scale-110 duration-200 hover:text-purple-500"
             />
           </a>
         )}
@@ -60,7 +60,7 @@ export default function HeroSection() {
           <a href="" target={"_blank"} rel="noopener noreferrer">
             <FaDiscord
               size={26}
-              className="transition-transform hover:scale-110 duration-200"
+              className="transition-transform hover:scale-110 duration-200 hover:text-purple-500"
             />
           </a>
         )}
