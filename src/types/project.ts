@@ -2,8 +2,7 @@ export interface ProjectCardProps {
   title: string;
   description: string;
   url: string;
-  frontend: string[];
-  backend: string[];
+  architecture: string[];
   achievements: string[];
   imageUrl: string;
 }

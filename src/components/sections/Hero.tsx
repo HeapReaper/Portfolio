@@ -18,7 +18,7 @@ export default function HeroSection() {
       {/* Hero content */}
       <Image
         src={personalData.profilePicture}
-        className="rounded-full border border-purple-500 shadow-[0_0_40px_rgba(168,85,247,0.6)] transition-transform hover:scale-110 duration-300"
+        className="rounded-full  shadow-[0_0_40px_rgba(168,85,247,0.6)] transition-transform hover:scale-110 duration-300"
         width={160}
         height={160}
         alt="Profile picture"

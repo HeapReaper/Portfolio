@@ -1,65 +1,54 @@
 export const projectsData = [
   {
-    title: "Project Alpha",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Orbit",
+    description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+    url: "https://botinorbit.com",
+    architecture: [
+      "Frontend: React (NextJS) with TailwindCSS",
+      "Backend: NextJS 15.5.5",
+      "Database: MariaDB with Redis and ClickHouse",
+      "Other: Using Docker with CD"
+    ],
+    achievements: [
+      "Built and deployed the full stack application independently.",
+      "Implemented key feature X using technology Y.",
+      "Improved API security by using sessions, rate limiting, "
+    ],
+    imageUrl: "/Orbit-screenshot.png",
+  },
+
+  {
+    title: "KlikCV",
+    description: "The completely free CV generator",
     url: "https://klikcv.nl",
-    frontend: [
-      "Lorem ipsum dolor sit amet",
-      "Consectetur adipiscing elit",
-      "Sed do eiusmod tempor"
-    ],
-    backend: [
-      "Incididunt ut labore et dolore",
-      "Magna aliqua ut enim ad minim",
-      "Veniam quis nostrud exercitation"
+    architecture: [
+      "Frontend: React (NextJS) with TailwindCSS",
+      "Backend: NextJS 15.5.5",
+      "Database: DB-less",
+      "Other: Using Docker with CD"
     ],
     achievements: [
-      "Duis aute irure dolor in reprehenderit",
-      "Excepteur sint occaecat cupidatat non proident",
-      "Sunt in culpa qui officia deserunt mollit anim"
+      "Built and deployed the full stack application independently.",
+      "Implemented key feature X using technology Y.",
+      "Improved security by using sessions, rate limiting, "
     ],
-    imageUrl: "https://placehold.co/300x300/png",
+    imageUrl: "/klikcv-screenshot.png",
   },
   {
-    title: "Project Beta",
-    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    url: "",
-    frontend: [
-      "Nisi ut aliquip ex ea commodo consequat",
-      "Duis aute irure dolor in reprehenderit",
-      "Velit esse cillum dolore eu fugiat nulla"
-    ],
-    backend: [
-      "Pariatur excepteur sint occaecat cupidatat",
-      "Non proident sunt in culpa",
-      "Qui officia deserunt mollit anim id est"
-    ],
-    achievements: [
-      "Laborum et dolore magna aliqua",
-      "Ut enim ad minim veniam",
-      "Quis nostrud exercitation ullamco laboris"
-    ],
-    imageUrl: "https://placehold.co/300x300/png",
-  },
-  {
-    title: "Project Gamma",
+    title: "Kiyomi",
     description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
     url: "",
-    frontend: [
-      "Accusantium doloremque laudantium",
-      "Totam rem aperiam",
-      "Eaque ipsa quae ab illo inventore"
-    ],
-    backend: [
-      "Veritatis et quasi architecto beatae",
-      "Vitae dicta sunt explicabo",
-      "Nemo enim ipsam voluptatem quia"
+    architecture: [
+      "Frontend: Bootstrap with Livewire",
+      "Backend: Laravel 11.9 with queues",
+      "Database: MariaDB with Redis",
+      "Other: Using Docker with CD",
     ],
     achievements: [
-      "Voluptas sit aspernatur aut odit",
-      "Aut fugit sed quia consequuntur magni",
-      "Dolores eos qui ratione voluptatem"
+      "Handled and reported 1500+ flights from 50+ members",
+      "Uses Queues to process PDF generation in the background",
+      "Optimized the frontend to be accessible to elderly members"
     ],
-    imageUrl: "https://placehold.co/300x300/png",
+    imageUrl: "/kiyomi-screenshot.png",
   },
 ];

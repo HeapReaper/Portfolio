@@ -5,8 +5,7 @@ export default function ProjectCard({
   title,
   description,
   url,
-  frontend,
-  backend,
+  architecture,
   achievements,
   imageUrl,
 }: ProjectCardProps) {
@@ -28,7 +27,7 @@ export default function ProjectCard({
             <div>
               <h3 className="text-purple-500 font-semibold mb-2">Architecture</h3>
               <ul className="space-y-1 text-gray-200 list-disc list-inside text-left">
-                {backend.map((item: string, index: number) => (
+                {architecture.map((item: string, index: number) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
@@ -52,7 +51,7 @@ export default function ProjectCard({
           alt={`${title} Screenshot`}
           width={320}
           height={320}
-          className="rounded-md shadow-md"
+          className="rounded-md  shadow-[0_0_40px_rgba(168,85,247,0.6)] transition-transform hover:scale-110 duration-300"
         />
       </div>
     </div>
