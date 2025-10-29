@@ -28,7 +28,7 @@ export default function ProjectCard({
             <div>
               <h3 className="text-purple-500 font-semibold mb-2">Frontend Architecture</h3>
               <ul className="space-y-1 text-gray-200 list-disc list-inside text-left">
-                {frontend.map((item, index) => (
+                {frontend.map((item: string, index: number) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
@@ -37,7 +37,7 @@ export default function ProjectCard({
             <div>
               <h3 className="text-purple-500 font-semibold mb-2">Backend Systems</h3>
               <ul className="space-y-1 text-gray-200 list-disc list-inside text-left">
-                {backend.map((item, index) => (
+                {backend.map((item: string, index: number) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
@@ -46,7 +46,7 @@ export default function ProjectCard({
             <div>
               <h3 className="text-purple-500 font-semibold mb-2">Key Achievements</h3>
               <ul className="space-y-1 text-gray-200 list-disc list-inside text-left">
-                {achievements.map((item, index) => (
+                {achievements.map((item: string, index: number) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
