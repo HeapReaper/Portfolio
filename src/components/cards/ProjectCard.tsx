@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {ProjectCardProps} from "@/types/project";
+import { ProjectCardProps } from "@/types/project";
 
 export default function ProjectCard({
   title,
@@ -26,27 +26,18 @@ export default function ProjectCard({
 
           <div className="flex flex-wrap justify-center items-start gap-12 mb-6 text-center">
             <div>
-              <h3 className="text-purple-500 font-semibold mb-2">Frontend Architecture</h3>
+              <h3 className="text-purple-500 font-semibold mb-2">Architecture</h3>
               <ul className="space-y-1 text-gray-200 list-disc list-inside text-left">
-                {frontend.map((item, index) => (
+                {backend.map((item: string, index: number) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
             </div>
 
             <div>
-              <h3 className="text-purple-500 font-semibold mb-2">Backend Systems</h3>
+              <h3 className="text-purple-500 font-semibold mb-2">Achievements</h3>
               <ul className="space-y-1 text-gray-200 list-disc list-inside text-left">
-                {backend.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-purple-500 font-semibold mb-2">Key Achievements</h3>
-              <ul className="space-y-1 text-gray-200 list-disc list-inside text-left">
-                {achievements.map((item, index) => (
+                {achievements.map((item: string, index: number) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
