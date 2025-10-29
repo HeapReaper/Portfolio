@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="backdrop-blur-md text-gray-300 py-10">
       <div className="mt-10 border-t border-gray-800 pt-6 text-center text-gray-500 text-sm">
         © {new Date().getFullYear()} {" "}
-        <a href="https://heapreaper.nl" target="_blank" className="underline">
+        <a href="https://heapreaper.nl" target="_blank" className="underline decoration-purple-500 hover:text-purple-500">
           {personalData.name}
         </a>. All rights reserved.
       </div>
