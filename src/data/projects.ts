@@ -6,7 +6,7 @@ export const projectsData = [
     url: "https://botinorbit.com",
     architecture: [
       "Frontend: React (Next.js) with TailwindCSS.",
-      "Backend: Next.js 15.5.5 API routes.",
+      "Backend: Next.js 15.5.6 API routes.",
       "Database: MariaDB with Redis and ClickHouse.",
       "Other: Dockerized with automated continuous deployment (CD).",
     ],
