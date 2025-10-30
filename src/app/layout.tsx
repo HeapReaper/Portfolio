@@ -41,7 +41,7 @@ export default function RootLayout({
     </div>
 
     {/* Main content */}
-    <main className="relative z-10 m-2 sm:m-0 p-0">
+    <main className="relative z-10 m-2 md:m-0 p-0">
       {children}
     </main>
 
