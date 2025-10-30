@@ -40,7 +40,7 @@ export const projectsData = [
   {
     title: "Kiyomi",
     description:
-      "A flight tracking and reporting platform for virtual airline members.",
+      "A flight tracking and member management platform for an local RC club.",
     url: "https://github.com/HeapReaper/Kiyomi",
     architecture: [
       "Frontend: Bootstrap with Laravel Livewire.",
