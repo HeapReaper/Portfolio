@@ -1,53 +1,57 @@
 export const projectsData = [
   {
     title: "Orbit",
-    description: "An extensive dashboard to configure the multi server Discord bot.",
+    description:
+      "A comprehensive dashboard for managing and configuring a multi-server Discord bot.",
     url: "https://botinorbit.com",
     architecture: [
-      "Frontend: React (NextJS) with TailwindCSS.",
-      "Backend: NextJS 15.5.5.",
+      "Frontend: React (Next.js) with TailwindCSS.",
+      "Backend: Next.js 15.5.5 API routes.",
       "Database: MariaDB with Redis and ClickHouse.",
-      "Other: Using Docker with CD."
+      "Other: Dockerized with automated continuous deployment (CD).",
     ],
     achievements: [
-      "Built and deployed the full stack application independently.",
-      "Using Redis caching to minimise database reads and to prevent Discord API limits.",
-      "Improved API security by using sessions, rate limiting, "
+      "Designed, developed, and deployed the full-stack application independently.",
+      "Implemented Redis caching to minimize database reads and prevent hitting Discord API rate limits.",
+      "Enhanced API security with session-based authentication and rate limiting.",
     ],
     imageUrl: "/Orbit-screenshot.png",
   },
 
   {
     title: "KlikCV",
-    description: "The completely free CV generator",
+    description:
+      "A completely free and privacy-focused CV generator for everyone.",
     url: "https://klikcv.nl",
     architecture: [
-      "Frontend: React (NextJS) with TailwindCSS.",
-      "Backend: NextJS 15.5.5.",
-      "Database: DB-less.",
-      "Other: Using Docker with CD."
+      "Frontend: React (Next.js) with TailwindCSS.",
+      "Backend: Next.js 15.5.5 API routes.",
+      "Database: Stateless (DB-less).",
+      "Other: Dockerized with automated continuous deployment (CD).",
     ],
     achievements: [
-      "Built and deployed the full stack application independently.",
-      "Implemented key feature X using technology Y.",
-      "Improved security by using sessions, rate limiting, "
+      "Built and deployed the entire platform from scratch.",
+      "Implemented dynamic PDF generation with customizable templates.",
+      "Optimized for SEO, accessibility, and fast load times through static generation.",
     ],
     imageUrl: "/klikcv-screenshot.png",
   },
+
   {
     title: "Kiyomi",
-    description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+    description:
+      "A flight tracking and reporting platform for virtual airline members.",
     url: "",
     architecture: [
-      "Frontend: Bootstrap with Livewire.",
-      "Backend: Laravel 11.9 with queues.",
+      "Frontend: Bootstrap with Laravel Livewire.",
+      "Backend: Laravel 11.9 with background queues.",
       "Database: MariaDB with Redis.",
-      "Other: Using Docker with CD.",
+      "Other: Dockerized with continuous deployment (CD).",
     ],
     achievements: [
-      "Handled and reported 1500+ flights from 50+ members.",
-      "Using Queues to process PDF generation in the background.",
-      "Optimized the frontend to be accessible to elderly members."
+      "Processed and reported over 1,500 flight logs from 50+ users.",
+      "Leveraged Laravel queues to handle PDF generation asynchronously.",
+      "Optimized the user interface for accessibility and ease of use by senior members.",
     ],
     imageUrl: "/kiyomi-screenshot.png",
   },
