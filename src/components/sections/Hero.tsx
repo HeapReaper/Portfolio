@@ -22,6 +22,7 @@ export default function HeroSection() {
         width={160}
         height={160}
         alt="Profile picture"
+        priority
       />
 
       <h1 className="text-3xl font-bold text-white">
