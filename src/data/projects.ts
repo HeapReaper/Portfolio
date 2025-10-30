@@ -49,7 +49,7 @@ export const projectsData = [
       "Other: Dockerized with continuous deployment (CD).",
     ],
     achievements: [
-      "Processed and reported over 1,500 flight logs from 50+ users.",
+      "Processed and reported over 1,500 flights from 50+ users.",
       "Leveraged Laravel queues to handle PDF generation asynchronously.",
       "Optimized the user interface for accessibility and ease of use by senior members.",
     ],
