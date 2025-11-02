@@ -69,9 +69,9 @@ export default function HeroSection() {
 
       {personalData.githubUsername !== "" && (
         <img
-          src="https://github-readme-activity-graph.vercel.app/graph?username=HeapReaper&theme=github-compact"
+          src="https://github-readme-activity-graph.vercel.app/graph?username=HeapReaper&theme=github-compact&line=805AD5&point=805AD5&area=false&area_color=D8B4FE"
           alt="GitHub Activity Graph"
-          className="w-full max-w-4xl h-auto rounded-2xl shadow-lg border border-white/10 mt-6 "
+          className="w-full max-w-4xl h-auto rounded-2xl shadow-lg border border-white/10 mt-6"
           loading="lazy"
         />
       )}
