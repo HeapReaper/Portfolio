@@ -7,7 +7,7 @@ import { socialsData } from "@/data/socials";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex flex-col justify-center items-center h-screen p-6  overflow-hidden space-y-5">
+    <section className="relative flex flex-col justify-center items-center h-screen overflow-hidden space-y-5">
       {/* Animated icons in background */}
       <FaReact className="animated-icon speed-1 text-blue-500" style={{ top: '10%', left: '20%' }} />
       <RiNextjsFill className="animated-icon speed-2 text-orange-500" style={{ top: '50%', left: '10%' }} />
@@ -18,7 +18,7 @@ export default function HeroSection() {
       {/* Hero content */}
       <Image
         src={personalData.profilePicture}
-        className="rounded-full  shadow-[0_0_40px_rgba(168,85,247,0.6)] transition-transform hover:scale-110 duration-300"
+        className="rounded-full shadow-[0_0_40px_rgba(168,85,247,0.6)] transition-transform hover:scale-110 duration-300"
         width={160}
         height={160}
         alt="Profile picture"
@@ -66,6 +66,15 @@ export default function HeroSection() {
           </a>
         )}
       </div>
+
+      {personalData.githubUsername !== "" && (
+        <img
+          src="https://github-readme-activity-graph.vercel.app/graph?username=HeapReaper&theme=github-compact"
+          alt="GitHub Activity Graph"
+          className="w-full max-w-4xl h-auto rounded-2xl shadow-lg border border-white/10 mt-6 "
+          loading="lazy"
+        />
+      )}
     </section>
   );
 }
