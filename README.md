@@ -24,8 +24,8 @@ You can edit the data files in `/src/app/data` to edit values like:
 
 
 ## Screenshots
-![Screenshot 1](/public/screenshot-1.png)
+![Screenshot 4](/public/screenshot-4.png)
 
-![Screenshot 2](/public/screenshot-2.png)
+![Screenshot 5](/public/screenshot-5.png)
 
 ![Screenshot 3](/public/screenshot-3.png)
