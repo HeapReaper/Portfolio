@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import React from "react";
@@ -28,6 +29,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+    <head>
+      {/* Plausible analytics */}
+      <Script
+        defer
+        data-domain="heapreaper.nl"
+        src="https://analytics.heapreaper.nl/js/script.file-downloads.hash.outbound-links.js"
+        strategy="afterInteractive"
+      />
+      <Script id="plausible-init" strategy="afterInteractive">
+        {`
+            window.plausible = window.plausible || function() {
+              (window.plausible.q = window.plausible.q || []).push(arguments)
+            }
+          `}
+      </Script>
+    </head>
+
     <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
     {/* Background Image */}
     <div className="fixed inset-0 -z-10 bg-gray-900">
