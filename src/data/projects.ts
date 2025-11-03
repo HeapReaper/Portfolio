@@ -47,7 +47,7 @@ export const projectsData = [
     websiteUrl: "",
     architecture: [
       "Frontend: Bootstrap with Laravel Livewire.",
-      "Backend: Laravel 11.9 with background queues.",
+      "Backend: Laravel 11.9.",
       "Database: MariaDB with Redis.",
       "Other: Dockerized with continuous deployment (CD).",
     ],
