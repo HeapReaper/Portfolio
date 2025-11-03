@@ -3,10 +3,11 @@ export const projectsData = [
     title: "Orbit",
     description:
       "A comprehensive dashboard for managing and configuring a multi-server Discord bot.",
-    url: "https://botinorbit.com",
+    githubUrl: "https://github.com/HeapReaper/Orbit",
+    websiteUrl: "https://botinorbit.com",
     architecture: [
       "Frontend: React (Next.js) with TailwindCSS.",
-      "Backend: Next.js 15.5.6 API routes.",
+      "Backend: Next.js 15.5.6.",
       "Database: MariaDB with Redis and ClickHouse.",
       "Other: Dockerized with automated continuous deployment (CD).",
     ],
@@ -22,10 +23,11 @@ export const projectsData = [
     title: "KlikCV",
     description:
       "A completely free and privacy-focused CV generator for everyone.",
-    url: "https://klikcv.nl",
+    githubUrl: "https://github.com/HeapReaper/KlikCV",
+    websiteUrl: "https://klikcv.nl",
     architecture: [
       "Frontend: React (Next.js) with TailwindCSS.",
-      "Backend: Next.js 15.5.5 API routes.",
+      "Backend: Next.js 15.5.5.",
       "Database: Stateless (DB-less).",
       "Other: Dockerized with automated continuous deployment (CD).",
     ],
@@ -41,7 +43,8 @@ export const projectsData = [
     title: "Kiyomi",
     description:
       "A flight tracking and member management platform for an local RC club.",
-    url: "https://github.com/HeapReaper/Kiyomi",
+    githubUrl: "https://github.com/HeapReaper/Kiyomi",
+    websiteUrl: "",
     architecture: [
       "Frontend: Bootstrap with Laravel Livewire.",
       "Backend: Laravel 11.9 with background queues.",

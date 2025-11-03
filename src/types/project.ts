@@ -1,7 +1,8 @@
 export interface ProjectCardProps {
   title: string;
   description: string;
-  url: string;
+  githubUrl?: string;
+  websiteUrl?: string;
   architecture: string[];
   achievements: string[];
   imageUrl: string;
