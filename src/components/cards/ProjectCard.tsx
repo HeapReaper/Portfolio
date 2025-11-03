@@ -3,14 +3,14 @@ import { FaGithub, FaGlobe } from "react-icons/fa";
 import { ProjectCardProps } from "@/types/project";
 
 export default function ProjectCard({
-                                      title,
-                                      description,
-                                      githubUrl,
-                                      websiteUrl,
-                                      architecture,
-                                      achievements,
-                                      imageUrl,
-                                    }: ProjectCardProps) {
+  title,
+  description,
+  githubUrl,
+  websiteUrl,
+  architecture,
+  achievements,
+  imageUrl,
+}: ProjectCardProps) {
   return (
     <div className="relative backdrop-blur-sm rounded-2xl shadow-lg p-6 flex flex-col md:flex-row md:gap-8 gap-4 items-center text-white border border-white/10">
       {/* Top-right icons */}
