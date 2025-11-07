@@ -49,7 +49,7 @@ export default function HeroSection() {
         )}
 
         {socialsData.linkedin !== "" && (
-          <a href="" target={"_blank"} rel="noopener noreferrer">
+          <a href={socialsData.linkedin} target="_blank" rel="noopener noreferrer">
             <FaLinkedin
               size={26}
               className="transition-transform hover:scale-110 duration-200 hover:text-purple-500"
@@ -58,7 +58,7 @@ export default function HeroSection() {
         )}
 
         {socialsData.discord !== "" && (
-          <a href="" target={"_blank"} rel="noopener noreferrer">
+          <a href={socialsData.discord} target="_blank" rel="noopener noreferrer">
             <FaDiscord
               size={26}
               className="transition-transform hover:scale-110 duration-200 hover:text-purple-500"
