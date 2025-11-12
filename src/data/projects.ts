@@ -2,7 +2,7 @@ export const projectsData = [
   {
     title: "Orbit",
     description:
-      "A comprehensive dashboard for managing and configuring a multi-server Discord bot.",
+      "A comprehensive dashboard for managing and configuring the multi-server Discord bot.",
     githubUrl: "https://github.com/HeapReaper/Orbit",
     websiteUrl: "https://botinorbit.com",
     architecture: [
