@@ -31,7 +31,14 @@ export default function HeroSection() {
 
       <h3 className="text-xl text-gray-300">
         {personalData.title}
+
+        {personalData.company && (
+          <p className="text-sm text-gray-400">
+            @ {personalData.company}
+          </p>
+        )}
       </h3>
+
 
       <h5 className="text-sm text-gray-300 text-center">
         {personalData.description}
