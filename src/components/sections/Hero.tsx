@@ -73,8 +73,7 @@ export default function HeroSection() {
           alt="GitHub Activity Graph"
           width={800}
           height={200}
-          className="w-full max-w-4xl h-auto rounded-2xl shadow-lg border border-white/10 mt-6"
-          loading="lazy"
+          className="w-full max-w-4xl h-auto rounded-2xl shadow-lg border border-white/10 mt-6 backdrop-blur-sm"
         />
       )}
     </section>

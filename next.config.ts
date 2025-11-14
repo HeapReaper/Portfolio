@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "github-readme-activity-graph.vercel.app",
-        pathname: "/**",
+        pathname: "/**"
       },
     ]
   }
