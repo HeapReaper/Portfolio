@@ -58,25 +58,4 @@ export const projectsData = [
     ],
     imageUrl: "/kiyomi-screenshot.png",
   },
-
-  {
-    title: "GitCord",
-    description: "Integrate your development Discord server with your GitHub repositories seamlessly. Manage bug reports, feature requests, and issue tracking directly from Discord!",
-    githubUrl: "https://github.com/HeapReaper/GitCord",
-    websiteUrl: "https://gitcord.nl", // optional, can remove if no website
-    architecture: [
-      "Bot Framework: Discord.JS (TypeScript) for handling messages, interactions, and threads.",
-      "Database: PostgreSQL with Prisma for storing linked messages, threads, and GitHub issues.",
-      "GitHub Integration: Octokit REST API to create, comment, and track issues.",
-      "Hosting: Dockerized for container-based deployment with persistent database storage.",
-    ],
-    achievements: [
-      "Implemented full workflow from Discord message → GitHub issue → Discord thread.",
-      "Supports creating new issues or linking to existing GitHub issues directly from Discord.",
-      "Automatically tracks closed GitHub issues and notifies Discord threads with linked commit messages.",
-      "Ensures safe and interactive workflows using buttons, select menus, and ephemeral messages.",
-    ],
-    imageUrl: "/GitCord.png", // optional path to your screenshot
-  }
-
 ];
